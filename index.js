@@ -17,7 +17,7 @@ const classify = (script) => {
 		if (twetch) {
 			tag = twetch;
 		} else if (isRunOut(script)) {
-			return runApp(script);
+			tag = isRunOut(script);
 		}
 	} else if (is21e8Out(script)) {
 		tag = '21e8';
